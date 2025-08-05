@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Подписка для доступа</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        button { padding: 10px 20px; background: #4285f4; color: white; border: none; cursor: pointer; }
+        button:disabled { background: #ccc; }
+    </style>
+</head>
+<body>
+    <h1>🔒 Доступ закрыт</h1>
+    <p>Подпишитесь на наши соцсети, чтобы получить доступ:</p>
+    
+    <div>
+        <a href="https://youtube.com/ваш-канал" target="_blank">📺 YouTube</a><br>
+        <a href="https://t.me/ваш-канал" target="_blank">📢 Telegram</a>
+    </div>
+
+    <p>После подписки нажмите "Я подписался"</p>
+    <button id="unlockBtn" onclick="unlock()">Я подписался</button>
+
+    <script>
+        function unlock() {
+            const link = "https://ваша-ссылка-на-файл"; // Ваша реальная ссылка
+            window.location.href = link;
+        }
+    </script>
+</body>
+</html>
